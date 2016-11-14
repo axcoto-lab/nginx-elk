@@ -1,0 +1,7 @@
+name 'nginx-elk'
+maintainer 'The Authors'
+maintainer_email 'you@example.com'
+license 'all_rights'
+description 'Installs/Configures nginx-elk'
+long_description 'Installs/Configures nginx-elk'
+version '0.1.0'
