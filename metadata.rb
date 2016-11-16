@@ -5,3 +5,6 @@ license 'all_rights'
 description 'Installs/Configures nginx-elk'
 long_description 'Installs/Configures nginx-elk'
 version '0.1.0'
+
+depends 'apt'
+depends 'build-essential'
