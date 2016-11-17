@@ -1,4 +1,4 @@
-name 'nginx-elk'
+name 'elk'
 maintainer 'The Authors'
 maintainer_email 'you@example.com'
 license 'all_rights'
@@ -8,3 +8,4 @@ version '0.1.0'
 
 depends 'apt'
 depends 'build-essential'
+depends 'java'
