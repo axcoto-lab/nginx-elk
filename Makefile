@@ -7,9 +7,9 @@ start:
 	docker start elk
 
 vendor:
-	berks vendor cookbooks
+	docker exec elk /bin/bash -c "cd /elk; berks vendor cookbooks"
 
 chef_local:
-	chef-client --local-mode  -o 'recipe[elk::elasticsearch]'
+	docker exec elk /bin/bash -c "cd /elk;  chef-client --local-mode  -o 'recipe[elk::elasticsearch]'"
 
 build: vendor chef_local
