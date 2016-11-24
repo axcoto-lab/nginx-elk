@@ -3,6 +3,9 @@
 run:
 	docker run --name elk -it -v `pwd`:/elk  ubuntu:xenial /bin/bash -l
 
+start:
+	docker start elk
+
 vendor:
 	berks vendor cookbooks
 
